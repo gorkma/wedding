@@ -526,7 +526,7 @@ img.with-border{
 }
 
 .first-child{
-	margin-left:25px;
+	margin-left:10px;
 }
 
 .split-margin{
@@ -2308,10 +2308,6 @@ a:hover .de-icon.effect3{
 /*-----------------------------------------------*/
 /* 11.1 Form Group								 */
 /*-----------------------------------------------*/
-.form-group{
-	margin-bottom: 30px;
-}
-
 .form-group.submit-wrapper{
 	margin-top:30px;
 }
