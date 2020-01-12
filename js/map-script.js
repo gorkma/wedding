@@ -14,15 +14,15 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 18,		
-			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(-12.046014, -77.030503),
-			panControl: true,
+    		zoom: 16.3,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+    		center: new google.maps.LatLng(42.814029, -1.6505427),
+				panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
   			//scaleControl: false,
-  			streetViewControl: true,
-  			overviewMapControl: true,
+  			streetViewControl: false,
+  			overviewMapControl: false,
 			//rotateControl:true,
 			
   		};
@@ -54,113 +54,72 @@
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
 		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046014, -77.030503),
+       		position: new google.maps.LatLng(42.811597, -1.650087),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-       		labelAnchor: new google.maps.Point(29, 20),
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f0394d;"><i class="de-icon-heart"></i></div>',
+       		labelAnchor: new google.maps.Point(20, 28),
        		labelClass: "labels" // the CSS class for the label
      		});
     
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046040, -77.029269),
+       		position: new google.maps.LatLng(42.815753, -1.648923),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-taxi"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f6700e"><i class="de-icon-food"></i></div>',
+       		labelAnchor: new google.maps.Point(20, 28),
        		labelClass: "labels" // the CSS class for the label
      		});
-			
+
 		var marker3 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.045909, -77.031712),
+       		position: new google.maps.LatLng(42.816053, -1.648742),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
-       		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#67a80e"><i class="de-icon-food"></i></div>',
+       		map: map,
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#0d9a48"><i class="de-icon-asterisk-1"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
      		});
-			
-		var marker4 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046617, -77.030567	),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#c89d1b"><i class="de-icon-coffee"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
-       		labelClass: "labels" // the CSS class for the label
-     		});
-			
-		var marker5 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.045857, -77.032538),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f0394d"><i class="de-icon-basket"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
-       		labelClass: "labels" // the CSS class for the label
-     		});	
-		
-		var marker6 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046053, -77.028732),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#f6700e"><i class="de-icon-paper-plane"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
-       		labelClass: "labels" // the CSS class for the label
-     		});	
-			
-		var marker7 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.045363, -77.029939),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map, 
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#0d9a48"><i class="de-icon-tree"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
-       		labelClass: "labels" // the CSS class for the label
-     		});			
-    	//marker.setMap( map );
 		
 		
 		//INFO WINDOWS
 		//=======================================================================================
-		var contentString = '<div>'+
-		'WEDDING CEREMONY';
+		var contentString1 = '<div style="font-weight: bold">'+
+		'CEREMONIA';
       	'</div>';
 		
-		var contentString1 = '<div>'+
-		'WEDDING PARTY';
+		var contentString2 = '<div style="font-weight: bold">'+
+		'COMDIDA Y FIESTA';
       	'</div>';
 
- 	 	var infowindow = new google.maps.InfoWindow({
-      		content: contentString
+ 	 	var infowindow1 = new google.maps.InfoWindow({
+      		content: contentString1
   		});
 		
-		var infowindow1 = new google.maps.InfoWindow({
-      		content: contentString1
+		var infowindow2 = new google.maps.InfoWindow({
+      		content: contentString2
   		});
 		
 		
 		
 		//OPEN INFO WINDOWS ON LOAD
 		//=======================================================================================
-  		infowindow.open(map,marker1);
-		
+  		infowindow1.open(map,marker1);
+  		infowindow2.open(map,marker2);
+
 		//ON CLICK MARKER, OPEN INFO WINDOWS
 		//=======================================================================================
 		google.maps.event.addListener(marker1, 'click', function() {
-  			infowindow.open(map,marker1);
+			infowindow1.open(map,marker1);
   		});
+		google.maps.event.addListener(marker2, 'click', function() {
+			infowindow2.open(map,marker2);
+		});
 
 		//ON MARKER CLICK EVENTS
 		//=======================================================================================
