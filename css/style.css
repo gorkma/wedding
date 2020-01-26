@@ -986,10 +986,15 @@ img.with-border{
 	height:inherit;
 	width:100%;
 	background-size:cover; 
-	background-position:50% 50%;
 	background-color:#FFF;
 	-webkit-transform: translateZ(0);
-	
+	background-position: top center;
+}
+
+@media screen and (max-width: 768px) {
+	#main-slider .slide-image {
+		background-position: 90% 0;
+	}
 }
 
 /* ----------------------------------------------*/
@@ -1061,6 +1066,14 @@ img.with-border{
 .slide-title.align-bottom{
 	vertical-align: bottom;
 	/*padding-bottom:0px;*/
+}
+.slide-title.align-mobile-desktop{
+	vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+	.slide-title.align-mobile-desktop{
+		vertical-align: top;
+	}
 }
 
 /* 06.5.6 Save The Date Title */
@@ -1390,6 +1403,17 @@ img.with-border{
 	background-attachment:scroll;
 }
 
+.image-divider.footer {
+	background-image:url(../images/fin.jpg);
+}
+
+@media screen and (max-width: 768px) {
+	.image-divider.footer {
+		background-image:url(../images/fin-mobile.jpg);
+	}
+
+}
+
 .video-divider {
 	position:relative;
 	color:#FFF;
@@ -1627,7 +1651,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 	display:inline-block;
 	font-family: 'Oswald', sans-serif;  
 	margin:auto;
-	margin-top:30px;
+	margin-top:20px;
 	margin-bottom:30px;
 	text-align:center
 }
@@ -2672,13 +2696,14 @@ footer .image-divider.fixed-height{
 #invited{
 	font-family: 'Pacifico', cursive; 
 	font-size:36px; 
-	margin-top:70px;
+	margin-top:20px;
 }
 
 #banner-date{
 	font-family: 'Oswald', sans-serif; 
 	letter-spacing:3px; 
 	font-size:14px;
+	margin-top: 10px;
 }
 
 /* ----------------------------------------------*/
