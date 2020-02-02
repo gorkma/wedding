@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="">
-    <title>MAIDER &amp; GORKA</title>
+    <title>MAIDER &amp; GORKA - !Nos casamos! 25 - 07 - 2020</title>
+    <meta name="description" content="Es un día especial para nosotros y nos gustaría que formaras parte de él. Confírmanos tu asistencia.">
+
+    <meta property="og:title" content="MAIDER &amp; GORKA - !Nos casamos! 25 - 07 - 2020" />
+    <meta property="og:description" content="Es un día especial para nosotros y nos gustaría que formaras parte de él. Confírmanos tu asistencia.">
+    <meta property="og:image" content="images/fin-mobile.jpg">
+    <meta property="og:type" content="article" />
 
     <link rel="icon" href="images/favicon.jpg">
     <!-- Bootstrap -->
@@ -104,8 +110,13 @@
         <li>
             <!-- SLIDE IMAGE -->
             <div data-stellar-ratio="0.5"
-                 class="slide-image"
+                 class="slide-image hidden-xs hidden-sm"
                  style="background-image:url(images/portada.jpg)">
+            </div>
+
+            <div data-stellar-ratio="0.5"
+                 class="slide-image hidden-md hidden-lg"
+                 style="background-image:url(images/portada-mobile.jpg)">
             </div>
 
             <!-- SLIDE OVERLAY -->
@@ -138,6 +149,10 @@
                     </div>-->
                 </div>
                 <!-- END of LOGO -->
+
+                <div id="mobile-date" class="hidden-md hidden-lg">
+                    25 / Julio / 2020
+                </div>
 
                 <div id="mobile-nav">
                     <i class="de-icon-menu"></i>
@@ -355,8 +370,8 @@
                 </div>
 
                 <div class="col-md-4 animation delay1 fadeInRight">
-                    <h3>NUESTRA "HIJITA"</h3>
-                    <p>Hace un tiempo que en nuestra vida entró una tercera personita… Chispa! Con ella hemos aprendido
+                    <h3>NUESTRA "PERRITA"</h3>
+                    <p>En nuestra vida también entró una princesita… ¡Chispa! Con ella hemos aprendido
                         nuevas responsabilidades, limpiarle el pis y las caquitas, sacarla a pasear, alguna noche de
                         insomnio las primeras semanas, educarla…vaya casi casi como un bebé.</p>
                     <p>Y ya es una más en la familia. Hasta los abuelos que no eran muy de animales, ahora están
@@ -405,7 +420,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div id="end-of-story" class="animation fadeInUp">
-                        <h2>Y FINALMENTE... NOS CASAMOS</h2>
+                        <h2>Y... ¡¡NOS VAMOS A CASAR!!</h2>
                         <div class="heart-divider">
                             <span class="grey-line"></span>
                             <i class="de-icon-heart pink-heart"></i>
@@ -502,7 +517,8 @@
                     </div>
                     <h3 class="inline">FIESTA</h3>
                     <p>Con la tripa llena y barra libre de bebida tendremos todo lo necesario para que la fiesta fluya y
-                        bailemos y cantemos hasta altas horas de la madrugada.</p>
+                        bailemos y cantemos hasta altas horas de la madrugada. Para recargar las pilas también habrá una
+                        recena.</p>
                 </div>
 
 
@@ -528,11 +544,9 @@
                         <h2 id="dont-miss-it-title" class="text-center animation fadeInUp">¡No te lo pierdas!</h2>
 
                         <div class="text-center animation fadeInUp">
-                            <p>9 años dan para mucho… para nosotros ya es como si nos conociéramos de toda la vida.
-                                ¿Así que por qué esperar más? Juntos nos adentramos en esta nueva aventura y juntos
-                                seguiremos “escribiendo” nuevos capítulos en nuestras vidas.</p>
-                            <p>
-                                Y que mejor manera de empezar, que haciendo una celebración junto a nuestros seres
+                            <p>9 años dan para mucho… ya es como si nos conociéramos de toda la vida.
+                                ¿Así que por qué esperar más? Juntos nos adentramos en esta nueva aventura y
+                                que mejor manera de empezar, que haciendo una celebración junto a nuestros seres
                                 cercanos y queridos. Amigos, familia, compañeros y allegados.
                             </p>
                         </div>
@@ -624,13 +638,22 @@
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <div id="email" class="form-group">
+                            <label for="inputcompanion1">EMAIL</label>
+                            <input type="email"
+                                   class="form-control ajax-input"
+                                   id="inputemail"
+                                   name="email"
+                                   placeholder="Tu correo electrónico"
+                                   data-output-label="Email">
+                        </div>
                         <div class="form-group">
                             <label for="inputmessage">MENSAJE</label>
                             <textarea id="inputmessage"
                                       name="message"
                                       class="form-control ajax-input"
-                                      placeholder="En el apartado de notas puedes poner cualquier intolerancia o solicitud especial."
-                                      rows="14"
+                                      placeholder="En este apartado puedes poner cualquier intolerancia o solicitud especial."
+                                      rows="10"
                                       data-output-label="Output Message"></textarea>
                         </div>
                     </div>
@@ -682,7 +705,7 @@
                             </div>
 
                             <div id="footer-couple-name" class="animation delay1 fadeInUp">
-                                MAI & GORKA
+                                MAIDER & GORKA
                             </div>
 
                         </div>

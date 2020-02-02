@@ -616,6 +616,13 @@ img.with-border{
 	color:#FFF;
 }
 
+#mobile-date {
+	display: inline-block;
+	margin-top: 22px;
+	text-align: center;
+	width: 65%;
+	font-weight: bold;
+}
 
 
 
@@ -989,12 +996,6 @@ img.with-border{
 	background-color:#FFF;
 	-webkit-transform: translateZ(0);
 	background-position: top center;
-}
-
-@media screen and (max-width: 768px) {
-	#main-slider .slide-image {
-		background-position: 90% 0;
-	}
 }
 
 /* ----------------------------------------------*/
@@ -1446,6 +1447,10 @@ img.with-border{
 	height:100%;
 	width:100%;
 	padding:150px 0;
+}
+
+#dont-miss-it .image-divider.auto-height {
+	padding:10px 0 290px 0;
 }
 
 .image-divider.fixed-height,
@@ -2867,6 +2872,10 @@ h2#dont-miss-it-title{
 	font-size:42px; 
 	margin-bottom:30px; 
 	font-family: 'Pacifico', cursive;
+}
+
+#dont-miss-it {
+	text-shadow: 3px 3px 3px #000;
 }
 
 .circle-countdown{
