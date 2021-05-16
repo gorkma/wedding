@@ -326,7 +326,7 @@ $(document).ready(function () {
   // 07. COUNTDOWN
   //===================================================================================
   var theday = new Date();
-  theday = new Date(2021, 7, 24);
+  theday = new Date(2021, 6, 24);
   $('#date-countdown').countdown({
     until: theday, format: 'DHMS', labels: ['Años', 'Meses', 'Semanas', 'Días', 'Horas', 'Minutos', 'Segundos'],
     labels1: ['Año', 'Mes', 'Semana', 'Día', 'Hora', 'Minuto', 'Segundo'],
